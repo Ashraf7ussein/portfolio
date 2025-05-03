@@ -6,7 +6,7 @@ import { IoMdDownload } from "react-icons/io";
 const About = () => {
   return (
     <div id="about" className="py-8 md:py-16 px-4 md:px-8">
-      <h2 className="underline underline-offset-4 decoration-wavy capitalize decoration-primary text-3xl md:text-4xl font-bold text-gray-800 text-center">
+      <h2 className="underline underline-offset-4 decoration-wavy capitalize decoration-primary text-3xl md:text-4xl font-bold text-center">
         About me
       </h2>
 
