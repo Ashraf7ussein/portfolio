@@ -57,31 +57,11 @@ const projectsGrid = () => {
     },
     {
       id: 5,
-      title: "Food service website",
-      liveDemo: "https://mealfoodservice.netlify.app/",
-      github_link: "https://github.com/Ashraf7ussein/meal",
-      description:
-        "I created this website after a course I took using only HTML5 and vanilla CSS.",
-      tags: ["HTML", "CSS"],
-    },
-
-    {
-      id: 6,
-      title: "Notes app",
-      liveDemo: "https://notes-app-exc.netlify.app/",
-      github_link: "https://github.com/Ashraf7ussein/notes-app",
-      description:
-        "With this app, you can write your notes, and they will be visible after the browser is refreshed.",
-      tags: ["HTML", "CSS", "JavaScript"],
-    },
-    {
-      id: 7,
-      title: "To-do list app",
-      liveDemo: "https://to-do-exc.netlify.app/",
-      github_link: "https://github.com/Ashraf7ussein/todo-list",
-      description:
-        "With this app, you can write your to-dos, and they will be visible after the browser is refreshed.",
-      tags: ["HTML", "CSS", "JavaScript"],
+      title: "Grover service website",
+      liveDemo: "https://grover-three.vercel.app/",
+      github_link: "https://github.com/Ashraf7ussein/grover",
+      description: "I created this website to practice my react skills",
+      tags: ["HTML", "TailwindCss", "React"],
     },
   ];
 

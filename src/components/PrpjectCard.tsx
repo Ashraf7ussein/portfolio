@@ -51,7 +51,7 @@ const ProjectCard = ({ title, github, liveDemo, tags, description }: Props) => {
       </div>
 
       {/* Footer */}
-      <div className="flex justify-between items-center px-6 py-4 border-t gap-3">
+      <div className="flex justify-center items-center px-6 py-4 border-t gap-3">
         <a
           href={liveDemo}
           target="_blank"
