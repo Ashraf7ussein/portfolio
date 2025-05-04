@@ -1,4 +1,5 @@
 import About from "../components/About";
+import Contact from "../components/Contact";
 import Header from "../components/Header";
 import ProjectsGrid from "../components/ProjectsGrid";
 import Skills from "../components/Skills";
@@ -10,6 +11,7 @@ const HomePage = () => {
       <About />
       <Skills />
       <ProjectsGrid />
+      <Contact />
     </div>
   );
 };
