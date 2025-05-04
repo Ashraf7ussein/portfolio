@@ -59,7 +59,7 @@ const projectsGrid = () => {
   ];
 
   return (
-    <div className="mx-auto mt-30 px-10" id="projects">
+    <div className="rippedPaper py-20 mx-auto mt-30 px-10" id="projects">
       <h2 className="underline underline-offset-4 decoration-wavy capitalize decoration-primary text-3xl md:text-4xl font-bold text-center">
         Projects
       </h2>

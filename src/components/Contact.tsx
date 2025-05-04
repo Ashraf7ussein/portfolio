@@ -55,7 +55,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-12 mt-15 flex justify-center items-center"
+      className="py-12 pt-15 flex justify-center items-center bg-secondary"
     >
       <div className="max-w-lg bg-white rounded-lg p-8 mx-4 sm:mx-10 w-full">
         <h2 className="text-3xl font-semibold text-gray-800 text-center mb-6">

@@ -1,6 +1,5 @@
 import { GrGithub } from "react-icons/gr";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { FaReact, FaNodeJs, FaDatabase } from "react-icons/fa"; // Example tech icons
 
 interface Props {
   title: string;
@@ -50,6 +49,7 @@ const ProjectCard = ({
       <div className="flex justify-between items-center px-6 py-4 border-t gap-3">
         <a
           href={livePreview}
+          target="_blank"
           className="flex items-center gap-2 px-5 pb-2 pt-3 border border-primary text-primary
               rounded-full shadow hover:bg-secondary hover:border-secondary hover:text-white transition-colors duration-300 relative"
         >

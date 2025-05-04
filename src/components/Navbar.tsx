@@ -1,14 +1,12 @@
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
-import { Link } from "react-router-dom";
 import { GiSkullCrack } from "react-icons/gi";
 import { HiOutlineMenu } from "react-icons/hi";
 
 const navLinks = [
-  { name: "home", href: "/" },
-  { name: "about", href: "/about" },
-  { name: "projects", href: "/projects" },
-  { name: "contact me", href: "/contact" },
+  { name: "about", href: "#about" },
+  { name: "projects", href: "#projects" },
+  { name: "contact me", href: "#contact" },
 ];
 
 const Navbar = () => {
@@ -16,12 +14,12 @@ const Navbar = () => {
 
   return (
     <nav className="flex flex-wrap items-center justify-between bg-primary px-4 py-6 rounded-b-2xl">
-      <Link to="/" className="flex items center gap-3">
+      <a href="/" className="flex items center gap-3">
         <GiSkullCrack className="text-white text-4xl mx-3 md:m-0" />
         <span className="text-white text-2xl font-medium hidden md:block relative top-[5px]">
           Ashraf.
         </span>
-      </Link>
+      </a>
 
       <button
         onClick={() => setMenuOpen(!menuOpen)}
@@ -46,9 +44,9 @@ const Navbar = () => {
               key={link.name}
               className="hover:bg-secondary transition-all duration-300 px-4 py-2 rounded-xl"
             >
-              <Link to={link.href} onClick={() => setMenuOpen(!menuOpen)}>
+              <a href={link.href} onClick={() => setMenuOpen(!menuOpen)}>
                 {link.name}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
