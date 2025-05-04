@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ashrafportfolio.vercel.app/sitemap.xml

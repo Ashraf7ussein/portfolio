@@ -42,7 +42,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li
               key={link.name}
-              className="hover:bg-secondary transition-all duration-300 px-4 py-2 rounded-xl"
+              className="hover:bg-secondary transition-all duration-300 px-4 pb-1 pt-2 rounded-xl"
             >
               <a href={link.href} onClick={() => setMenuOpen(!menuOpen)}>
                 {link.name}
