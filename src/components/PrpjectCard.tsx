@@ -2,16 +2,26 @@ import { GrGithub } from "react-icons/gr";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
-interface Props {
+export interface Project {
   title: string;
   github: string;
   liveDemo: string;
-  index: number;
   tags: string[];
   description: string;
+  id: string;
+  images: string[];
+  features: string[];
+  technologies: string[];
 }
 
-const ProjectCard = ({ title, github, liveDemo, tags, description }: Props) => {
+const ProjectCard = ({
+  title,
+  github,
+  liveDemo,
+  tags,
+  description,
+  id,
+}: Project) => {
   return (
     <div className="rounded-2xl bg-white shadow-[0px_0px_10px_rgba(0,0,0,0.30)] overflow-hidden border-1 border-secondary">
       {/* Header */}
@@ -27,9 +37,9 @@ const ProjectCard = ({ title, github, liveDemo, tags, description }: Props) => {
 
         <p className="text-gray-600 text-lg mb-2">tags used in the project:</p>
         <div className="flex flex-wrap gap-2 mt-2">
-          {tags.map((tech, index) => (
+          {tags.map((tech) => (
             <span
-              key={index}
+              key={id}
               className="bg-gray-200 text-gray-800 text-xs font-medium px-3 pt-2 pb-1 rounded-full"
             >
               {tech}
@@ -38,7 +48,7 @@ const ProjectCard = ({ title, github, liveDemo, tags, description }: Props) => {
         </div>
         <div className="group">
           <Link
-            to=""
+            to={`/project/${id}`}
             className="inline-flex items-center gap-2 mt-5 text-primary font-semibold text-sm hover:underline hover:text-secondary transition duration-300"
           >
             Read more
