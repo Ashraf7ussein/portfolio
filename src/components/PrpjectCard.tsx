@@ -6,7 +6,7 @@ interface Props {
   github: string;
   livePreview: string;
   index: number;
-  technologies: string[];
+  tags: string[];
   description: string;
 }
 
@@ -14,14 +14,14 @@ const ProjectCard = ({
   title,
   github,
   livePreview,
-  technologies,
+  tags,
   description,
 }: Props) => {
   return (
-    <div className="rounded-2xl bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)] overflow-hidden">
+    <div className="rounded-2xl bg-white shadow-[0px_0px_10px_rgba(0,0,0,0.30)] overflow-hidden border-1 border-secondary">
       {/* Header */}
       <div className="bg-primary px-6 py-4">
-        <h3 className="font-bold text-xl text-white text-center">{title}</h3>
+        <h3 className="font-bold text-2xl text-white text-center">{title}</h3>
       </div>
 
       {/* Body */}
@@ -30,14 +30,12 @@ const ProjectCard = ({
           {description} {/* Project description */}
         </p>
 
-        <p className="text-gray-600 text-lg mb-2">
-          Technologies used in the project:
-        </p>
+        <p className="text-gray-600 text-lg mb-2">tags used in the project:</p>
         <div className="flex flex-wrap gap-2 mt-2">
-          {technologies.map((tech, index) => (
+          {tags.map((tech, index) => (
             <span
               key={index}
-              className="bg-gray-200 text-gray-800 text-xs font-medium px-3 py-1 rounded-full"
+              className="bg-gray-200 text-gray-800 text-xs font-medium px-3 pt-2 pb-1 rounded-full"
             >
               {tech}
             </span>

@@ -17,7 +17,7 @@ const About = () => {
           alt="About Me Image"
         />
 
-        <div>
+        <div className="px-10">
           <p className="text-gray-800 text-lg leading-relaxed">
             Hello! I'm <span className="font-bold">Ashraf</span>, a Mechatronics
             Engineering graduate (2019). This website showcases my transition
@@ -26,7 +26,7 @@ const About = () => {
             innovate and build remarkable digital experiences together!
           </p>
 
-          <div className="flex justify-center md:justify-start gap-4 mt-10">
+          <div className="flex flex-col md:flex-row items-center flex-nowrap justify-center md:justify-start gap-4 mt-10">
             <a
               href={cv}
               download

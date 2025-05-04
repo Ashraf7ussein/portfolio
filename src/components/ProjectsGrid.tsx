@@ -9,7 +9,15 @@ const projectsGrid = () => {
       github_link: "https://github.com/Ashraf7ussein/game-hub",
       description:
         "This project was created as part of a course I took, it is a clone of the rawg website, and I used the rawg API to fetch the games.",
-      technologies: ["React", "JavaScript", "RAWG API"],
+      tags: [
+        "React",
+        "JavaScript",
+        "RAWG API",
+        "Zustand",
+        "React Router",
+        " Chakra UI",
+        "React Query",
+      ],
     },
     {
       id: 2,
@@ -18,26 +26,36 @@ const projectsGrid = () => {
       github_link: "https://github.com/Ashraf7ussein/edusitywebsite",
       description:
         "This project resembles a university website, providing a comprehensive view of the university's offerings and student experiences.",
-      technologies: ["HTML", "CSS", "JavaScript", "React"],
+      tags: ["HTML", "tailwindCss", "JavaScript", "React"],
     },
     {
       id: 3,
+      title: "Qahwa Blk",
+      livePreview: "https://qahwablk.onrender.com/",
+      github_link: "https://github.com/Ashraf7ussein/qahwablk",
+      description:
+        "This project is an online coffee retailer offering a curated selection of freshly roasted coffee with unique blends and flavors.",
+      tags: [
+        "HTML",
+        "tailwindCss",
+        "JavaScript",
+        "React",
+        "firebase auth",
+        "express js",
+        "mongodb",
+        "React Router",
+      ],
+    },
+    {
+      id: 4,
       title: "Food service website",
       livePreview: "https://mealfoodservice.netlify.app/",
       github_link: "https://github.com/Ashraf7ussein/meal",
       description:
         "I created this website after a course I took using only HTML5 and vanilla CSS.",
-      technologies: ["HTML", "CSS"],
+      tags: ["HTML", "CSS"],
     },
-    {
-      id: 4,
-      title: "Weather App",
-      livePreview: "https://weather-app-exc.netlify.app/",
-      github_link: "https://github.com/Ashraf7ussein/weather",
-      description:
-        "This app shows the weather condition for the searched city using the OpenWeather API.",
-      technologies: ["JavaScript", "OpenWeather API"],
-    },
+
     {
       id: 5,
       title: "Notes app",
@@ -45,7 +63,7 @@ const projectsGrid = () => {
       github_link: "https://github.com/Ashraf7ussein/notes-app",
       description:
         "With this app, you can write your notes, and they will be visible after the browser is refreshed.",
-      technologies: ["HTML", "CSS", "JavaScript"],
+      tags: ["HTML", "CSS", "JavaScript"],
     },
     {
       id: 6,
@@ -54,7 +72,7 @@ const projectsGrid = () => {
       github_link: "https://github.com/Ashraf7ussein/todo-list",
       description:
         "With this app, you can write your to-dos, and they will be visible after the browser is refreshed.",
-      technologies: ["HTML", "CSS", "JavaScript"],
+      tags: ["HTML", "CSS", "JavaScript"],
     },
   ];
 
@@ -71,7 +89,7 @@ const projectsGrid = () => {
             livePreview={item.livePreview}
             github={item.github_link}
             description={item.description}
-            technologies={item.technologies}
+            tags={item.tags}
             index={0}
           />
         ))}

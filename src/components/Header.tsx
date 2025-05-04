@@ -20,7 +20,7 @@ const Header = () => {
         <img
           src={profile}
           alt="Profile"
-          className="w-40 h-40 md:w-56 md:h-56 object-cover rounded-2xl"
+          className="w-56 h-56 md:w-72 md:h-72 object-cover rounded-2xl"
         />
       </div>
     </div>

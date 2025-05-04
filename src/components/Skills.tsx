@@ -30,7 +30,7 @@ const Skills = () => {
   const infiniteList = [...list, ...list];
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden mt-20">
       <h2
         className="mb-10 underline underline-offset-4 decoration-wavy capitalize decoration-primary 
         text-3xl md:text-4xl font-bold text-center"
