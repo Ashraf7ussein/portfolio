@@ -33,6 +33,8 @@ const projectsGrid = () => {
             tags={item.tags}
             id={item.id}
             images={item.images}
+            features={item.features}
+            technologies={item.technologies}
           />
         ))}
       </div>
