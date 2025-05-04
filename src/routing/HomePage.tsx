@@ -1,5 +1,6 @@
 import About from "../components/About";
 import Header from "../components/Header";
+import ProjectsGrid from "../components/ProjectsGrid";
 import Skills from "../components/Skills";
 
 const HomePage = () => {
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Header />
       <About />
       <Skills />
+      <ProjectsGrid />
     </div>
   );
 };
