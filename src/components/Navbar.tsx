@@ -13,10 +13,13 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="flex flex-wrap items-center justify-between bg-primary px-4 py-6 rounded-b-2xl">
-      <a href="/" className="flex items center gap-3">
+    <nav
+      className="fixed top-0 left-0 w-full z-50 flex flex-wrap items-center justify-between bg-primary px-4 py-6 
+    rounded-b-2xl shadow-lg"
+    >
+      <a href="/" className="flex items-center md:gap-2">
         <GiSkullCrack className="text-white text-4xl mx-3 md:m-0" />
-        <span className="text-white text-2xl font-medium hidden md:block relative top-[5px]">
+        <span className="text-white text-2xl font-medium relative top-[5px]">
           Ashraf.
         </span>
       </a>
@@ -44,7 +47,7 @@ const Navbar = () => {
               key={link.name}
               className="hover:bg-secondary transition-all duration-300 px-4 pb-1 pt-2 rounded-xl"
             >
-              <a href={link.href} onClick={() => setMenuOpen(!menuOpen)}>
+              <a href={link.href} onClick={() => setMenuOpen(false)}>
                 {link.name}
               </a>
             </li>

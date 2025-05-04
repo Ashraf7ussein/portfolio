@@ -1,4 +1,7 @@
+import { useEffect } from "react";
 import ProjectCard from "./PrpjectCard";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const projectsGrid = () => {
   const projectsList = [
@@ -65,8 +68,21 @@ const projectsGrid = () => {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+    });
+
+    //  destroy AOS on component unmount
+    return () => AOS.refresh();
+  }, []);
   return (
-    <div className="rippedPaper py-20 mx-auto mt-30 px-10" id="projects">
+    <div
+      data-aos="fade-up"
+      className="rippedPaper py-20 mx-auto mt-30 px-10"
+      id="projects"
+    >
       <h2 className="underline underline-offset-4 decoration-wavy capitalize decoration-primary text-3xl md:text-4xl font-bold text-center">
         Projects
       </h2>
