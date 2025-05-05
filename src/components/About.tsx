@@ -19,10 +19,12 @@ const About = () => {
 
         <div className="px-10">
           <p className="text-gray-800 text-lg leading-relaxed">
-            Hello! I'm <span className="font-bold">Ashraf</span>, a Mechatronics
-            Engineering graduate (2019). This website showcases my transition
-            into front-end development. Join me as I share insights, projects,
-            and experiences in this exciting journey post-graduation. Let's
+            I'm <span className="font-bold">Ashraf</span>, a Mechatronics
+            Engineering graduate (class 2019). This website showcases my
+            transition into front-end development and mobile development. With a
+            background in mechatronics, I’m excited to explore the world of
+            digital innovation. Join me as I share insights, projects, and
+            experiences in this thrilling journey post-graduation. Let’s
             innovate and build remarkable digital experiences together!
           </p>
 
