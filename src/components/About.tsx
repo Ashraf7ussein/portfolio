@@ -10,15 +10,6 @@ const About = () => {
         About me
       </h2>
 
-      <div
-        style={{
-          fontFamily: "Swear-Display-Bold-Cilati, sans-serif",
-          fontSize: "32px",
-        }}
-      >
-        Custom Font Test
-      </div>
-
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-8">
         <img
           className="w-64 h-64 md:w-80 md:h-80 mt-10 md:m-0"
