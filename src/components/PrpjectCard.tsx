@@ -23,23 +23,21 @@ const ProjectCard = ({
   id,
 }: Project) => {
   return (
-    <div className="rounded-2xl bg-white overflow-hidden border-1 border-secondary">
+    <div className="rounded-2xl bg-white overflow-hidden border border-secondary flex flex-col h-full">
       {/* Header */}
       <div className="bg-primary px-6 py-4">
         <h3 className="font-bold text-2xl text-white text-center">{title}</h3>
       </div>
 
       {/* Body */}
-      <div className="p-6">
-        <p className="text-gray-600 text-lg mb-2">
-          {description} {/* Project description */}
-        </p>
+      <div className="p-6 flex-grow">
+        <p className="text-gray-600 text-lg mb-2">{description}</p>
 
         <p className="text-gray-600 text-lg mb-2">tags used in the project:</p>
         <div className="flex flex-wrap gap-2 mt-2">
           {tags.map((tech) => (
             <span
-              key={id}
+              key={`${id}-${tech}`}
               className="bg-gray-200 text-gray-800 text-xs font-medium px-3 pt-2 pb-1 rounded-full"
             >
               {tech}
@@ -61,19 +59,22 @@ const ProjectCard = ({
       </div>
 
       {/* Footer */}
-      <div className="flex justify-center items-center px-6 py-4 border-t gap-3">
+      <div className="flex justify-center items-center px-6 py-4 border-t gap-3 mt-auto">
         <a
           href={liveDemo}
           target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center gap-2 px-5 pb-2 pt-3 border border-primary text-primary
-              rounded-full  hover:bg-secondary hover:border-secondary hover:text-white transition-colors duration-300 relative"
+          rounded-full hover:bg-secondary hover:border-secondary hover:text-white transition-colors duration-300"
         >
           Live Demo
         </a>
         <a
           href={github}
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center gap-2 px-5 pb-2 pt-3 border border-primary text-primary
-              rounded-full  hover:bg-secondary hover:border-secondary hover:text-white transition-colors duration-300 relative"
+          rounded-full hover:bg-secondary hover:border-secondary hover:text-white transition-colors duration-300"
         >
           GitHub <GrGithub size={20} />
         </a>

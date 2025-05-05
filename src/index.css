@@ -5,7 +5,7 @@
   --color-secondary: #262424;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Swear-Display-Bold-Cilati';
   src: url('/fonts/Swear-Display-Bold-Cilati.otf') format('opentype');
   font-weight: bold;
@@ -15,7 +15,7 @@
 .customFont {
   font-family: 'Swear-Display-Bold-Cilati', sans-serif;
   letter-spacing: -1px;
-}
+} */
 
 :root {
   font-family: "Bebas Neue", sans-serif;
