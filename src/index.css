@@ -5,6 +5,18 @@
   --color-secondary: #262424;
 }
 
+@font-face {
+  font-family: 'Swear-Display-Bold-Cilati';
+  src: url('/fonts/Swear-Display-Bold-Cilati.otf') format('opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+.customFont {
+  font-family: 'Swear-Display-Bold-Cilati', sans-serif;
+  letter-spacing: -1px;
+}
+
 :root {
   font-family: "Bebas Neue", sans-serif;
   line-height: 1.5;
@@ -21,9 +33,7 @@
   background: white;
   position: relative;
   z-index: 1;
-  box-shadow: 0 16px 15px rgba(0, 0, 0, 0.35); 
-  
-  
+  box-shadow: 0 16px 15px rgba(0, 0, 0, 0.35);  
 }
 
 .rippedPaper::after {
@@ -94,7 +104,7 @@
 
 .animate-scroll {
   display: flex;
-  animation: scroll 30s linear infinite;
+  animation: scroll 15s linear infinite;
 }
 
 html {

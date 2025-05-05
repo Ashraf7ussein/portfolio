@@ -18,7 +18,7 @@ const Header = () => {
       <div id="home" className="rippedPaper mx-8 md:mx-24 my-10 rounded-t-2xl">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-5 md:p-10">
           <div className="max-w-xl">
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+            <h1 className="customFont text-4xl md:text-6xl">
               Ashraf <br /> Hussein.
             </h1>
             <div className="mt-4">

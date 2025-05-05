@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { projectsList } from "../data/ProjectList";
 import { Project } from "../components/PrpjectCard";
 
-const ProjectDetails = () => {
+const ProjectDetailsPage = () => {
   const { id } = useParams();
   const [project, setProject] = useState<Project | null>(null);
 
@@ -86,4 +86,4 @@ const ProjectDetails = () => {
   );
 };
 
-export default ProjectDetails;
+export default ProjectDetailsPage;

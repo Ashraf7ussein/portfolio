@@ -17,10 +17,10 @@ const projectsGrid = () => {
   return (
     <div
       data-aos="fade-up"
-      className="rippedPaper py-20 mx-auto mt-30 px-10"
+      className="rippedPaper py-20 mx-auto mt-15 px-10"
       id="projects"
     >
-      <h2 className="underline underline-offset-4 decoration-wavy capitalize decoration-primary text-3xl md:text-4xl font-bold text-center">
+      <h2 className="customFont underline underline-offset-4 decoration-wavy capitalize decoration-primary text-3xl md:text-4xl font-bold text-center">
         Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">

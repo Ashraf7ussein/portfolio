@@ -4,8 +4,13 @@ import blk1 from "../assets/blk1.webp";
 import blk2 from "../assets/blk2.webp";
 import blk3 from "../assets/blk3.webp";
 import blk4 from "../assets/blk4.webp";
+import blk5 from "../assets/blk5.webp";
+import blk6 from "../assets/blk6.webp";
 import edu from "../assets/edu.webp";
 import pok1 from "../assets/pok1.webp";
+import pok2 from "../assets/pok2.webp";
+import pok3 from "../assets/pok3.webp";
+import grover from "../assets/grover.webp";
 
 export const projectsList = [
   {
@@ -76,7 +81,7 @@ export const projectsList = [
       "MongoDB",
       "React Router",
     ],
-    images: [blk1, blk2, blk3, blk4],
+    images: [blk1, blk2, blk3, blk4, blk5, blk6],
   },
 
   {
@@ -94,12 +99,12 @@ export const projectsList = [
       "Native mobile UI with smooth navigation",
     ],
     technologies: ["React Native", "Expo", "PokéAPI"],
-    images: [pok1],
+    images: [pok1, pok2, pok3],
   },
 
   {
     id: "5",
-    title: "🛍️ Grover Service Website",
+    title: "🍔 Grover Service Website",
     liveDemo: "https://grover-three.vercel.app/",
     github: "https://github.com/Ashraf7ussein/grover",
     description:
@@ -112,10 +117,7 @@ export const projectsList = [
       "Clean UI with Tailwind CSS",
     ],
     technologies: ["React", "Tailwind CSS"],
-    images: [
-      "https://via.placeholder.com/800x400?text=Grover+Landing+Page",
-      "https://via.placeholder.com/800x400?text=Product+Highlights",
-    ],
+    images: [grover],
   },
 
   {

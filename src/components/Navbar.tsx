@@ -19,9 +19,7 @@ const Navbar = () => {
     >
       <a href="/" className="flex items-center md:gap-2">
         <GiSkullCrack className="text-white text-4xl mx-3 md:m-0" />
-        <span className="text-white text-2xl font-medium relative top-[5px]">
-          Ashraf.
-        </span>
+        <span className="customFont text-white text-3xl">Ashraf</span>
       </a>
 
       <button

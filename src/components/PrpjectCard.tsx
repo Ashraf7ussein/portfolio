@@ -23,7 +23,7 @@ const ProjectCard = ({
   id,
 }: Project) => {
   return (
-    <div className="rounded-2xl bg-white shadow-[0px_0px_10px_rgba(0,0,0,0.30)] overflow-hidden border-1 border-secondary">
+    <div className="rounded-2xl bg-white overflow-hidden border-1 border-secondary">
       {/* Header */}
       <div className="bg-primary px-6 py-4">
         <h3 className="font-bold text-2xl text-white text-center">{title}</h3>
@@ -66,14 +66,14 @@ const ProjectCard = ({
           href={liveDemo}
           target="_blank"
           className="flex items-center gap-2 px-5 pb-2 pt-3 border border-primary text-primary
-              rounded-full shadow hover:bg-secondary hover:border-secondary hover:text-white transition-colors duration-300 relative"
+              rounded-full  hover:bg-secondary hover:border-secondary hover:text-white transition-colors duration-300 relative"
         >
-          Live Preview
+          Live Demo
         </a>
         <a
           href={github}
           className="flex items-center gap-2 px-5 pb-2 pt-3 border border-primary text-primary
-              rounded-full shadow hover:bg-secondary hover:border-secondary hover:text-white transition-colors duration-300 relative"
+              rounded-full  hover:bg-secondary hover:border-secondary hover:text-white transition-colors duration-300 relative"
         >
           GitHub <GrGithub size={20} />
         </a>
