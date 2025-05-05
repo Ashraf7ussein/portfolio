@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'Swear-Display-Bold-Cilati';
-  src: url('../public/fonts/Swear-Display-Bold-Cilati.otf') format('opentype');
+  src: url('/fonts/Swear-Display-Bold-Cilati.otf') format('opentype');
   font-weight: bold;
   font-style: italic;
 }
