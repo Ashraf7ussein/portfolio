@@ -54,7 +54,10 @@ const Navbar = () => {
               key={link.name}
               className="hover:bg-secondary cursor-pointer transition-all duration-300 px-4 pb-1 pt-2 rounded-xl"
             >
-              <button onClick={() => handleNavClick(link.target)}>
+              <button
+                className="cursor-pointer"
+                onClick={() => handleNavClick(link.target)}
+              >
                 {link.name}
               </button>
             </li>

@@ -9,7 +9,21 @@ import SplashScreen from "../components/SplashScree";
 
 const HomePage = () => {
   const location = useLocation();
-  const [showSplash, setShowSplash] = useState(true);
+  const [showSplash, setShowSplash] = useState(false);
+
+  useEffect(() => {
+    // Only show splash screen once per session
+    const splashShown = sessionStorage.getItem("splashShown");
+    if (!splashShown) {
+      setShowSplash(true);
+      const timer = setTimeout(() => {
+        setShowSplash(false);
+        sessionStorage.setItem("splashShown", "true");
+      }, 3000); // splash duration
+
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
   useEffect(() => {
     const scrollTo = location.state?.scrollTo;
@@ -20,14 +34,6 @@ const HomePage = () => {
       }
     }
   }, [location]);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowSplash(false);
-    }, 3000); // Duration matches the animation delay (2s) + animation duration (1s)
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <>
