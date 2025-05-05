@@ -3,6 +3,7 @@
 @theme {
   --color-primary: #e23229;
   --color-secondary: #262424;
+  --color-background: #f5f5f5;
 }
 
 /* @font-face {
@@ -25,7 +26,7 @@
 
   color-scheme: light dark;
   color: var(--color-secondary);
-  background-color: #f5f5f5;
+  background-color: var(--color-background);
 }
 
 
@@ -143,4 +144,25 @@ html {
   50% {
     transform: scale(1.1);
   }
+}
+
+.fade-mask::before,
+.fade-mask::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.fade-mask::before {
+  left: 0;
+  background: linear-gradient(to right, var(--color-background), transparent);
+}
+
+.fade-mask::after {
+  right: 0;
+  background: linear-gradient(to left, var(--color-background), transparent);
 }

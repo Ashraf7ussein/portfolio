@@ -30,25 +30,29 @@ const Skills = () => {
   const infiniteList = [...list, ...list];
 
   return (
-    <div className="overflow-hidden mt-20">
-      <h2
-        className="customFont mb-10 underline underline-offset-4 decoration-wavy capitalize decoration-primary 
-        text-3xl md:text-4xl font-bold text-center"
-      >
+    <div className="overflow-hidden mt-20 relative">
+      <h2 className="customFont mb-10 underline underline-offset-4 decoration-wavy capitalize decoration-primary text-3xl md:text-4xl font-bold text-center">
         Skills
       </h2>
-      <div className="whitespace-nowrap animate-scroll flex">
-        {infiniteList.map((item, index) => (
-          <div
-            className="flex flex-col items-center min-w-[100px]"
-            key={`${item.id}-${index}`}
-          >
-            <item.image size={40} className="text-gray-800" />
-            <p className="text-gray-800 font-medium text-lg mt-2">
-              {item.name}
-            </p>
-          </div>
-        ))}
+
+      <div className="relative">
+        {/* Mask wrapper */}
+        <div className="fade-mask pointer-events-none absolute inset-0 z-10" />
+
+        {/* Scrolling content */}
+        <div className="whitespace-nowrap animate-scroll flex">
+          {infiniteList.map((item, index) => (
+            <div
+              className="flex flex-col items-center min-w-[100px]"
+              key={`${item.id}-${index}`}
+            >
+              <item.image size={40} className="text-gray-800" />
+              <p className="text-gray-800 font-medium text-lg mt-2">
+                {item.name}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
