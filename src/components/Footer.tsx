@@ -1,11 +1,11 @@
 import { GrGithub, GrLinkedin } from "react-icons/gr";
-import { GiSkullCrack } from "react-icons/gi";
+import { GiSurprisedSkull } from "react-icons/gi";
 
 const Footer = () => {
   return (
     <footer className="bg-secondary">
       <div className="bg-primary rounded-t-2xl text-white py-2 md:py-4 flex items-center gap-2 md:gap-7 justify-center">
-        <GiSkullCrack className="text-3xl md:text-5xl" />
+        <GiSurprisedSkull className="text-3xl md:text-5xl" />
         <p className="text-sm mt-2 md:mt-0">
           &copy; 2025 Ashraf. All rights reserved.
         </p>

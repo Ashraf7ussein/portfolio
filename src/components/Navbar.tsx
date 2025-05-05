@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
-import { GiSkullCrack } from "react-icons/gi";
 import { HiOutlineMenu } from "react-icons/hi";
+import { GiSurprisedSkull } from "react-icons/gi";
 
 const navLinks = [
   { name: "about", target: "about" },
@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 flex flex-wrap items-center justify-between bg-primary px-4 py-6 rounded-b-2xl shadow-lg">
       <a href="/" className="flex items-center md:gap-2">
-        <GiSkullCrack className="text-white text-4xl mx-3 md:m-0" />
+        <GiSurprisedSkull className="text-white text-5xl mx-3 md:m-0" />
         <span className="customFont text-white text-3xl">Ashraf</span>
       </a>
 
