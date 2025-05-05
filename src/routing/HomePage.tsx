@@ -4,10 +4,12 @@ import Contact from "../components/Contact";
 import Header from "../components/Header";
 import ProjectsGrid from "../components/ProjectsGrid";
 import Skills from "../components/Skills";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import SplashScreen from "../components/SplashScree";
 
 const HomePage = () => {
   const location = useLocation();
+  const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
     const scrollTo = location.state?.scrollTo;
@@ -18,14 +20,29 @@ const HomePage = () => {
       }
     }
   }, [location]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSplash(false);
+    }, 3000); // Duration matches the animation delay (2s) + animation duration (1s)
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div>
-      <Header />
-      <About />
-      <Skills />
-      <ProjectsGrid />
-      <Contact />
-    </div>
+    <>
+      {showSplash ? (
+        <SplashScreen />
+      ) : (
+        <div>
+          <Header />
+          <About />
+          <Skills />
+          <ProjectsGrid />
+          <Contact />
+        </div>
+      )}
+    </>
   );
 };
 
