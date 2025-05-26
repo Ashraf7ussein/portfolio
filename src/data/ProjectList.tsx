@@ -6,13 +6,30 @@ import blk3 from "../assets/blk3.webp";
 import blk4 from "../assets/blk4.webp";
 import blk5 from "../assets/blk5.webp";
 import blk6 from "../assets/blk6.webp";
-import edu from "../assets/edu.webp";
 import pok1 from "../assets/pok1.webp";
 import pok2 from "../assets/pok2.webp";
 import pok3 from "../assets/pok3.webp";
 import grover from "../assets/grover.webp";
+import tcg1 from "../assets/tcg1.webp";
+import tcg2 from "../assets/tcg2.webp";
 
 export const projectsList = [
+  {
+    id: "pokedex",
+    title: "🧬 Pokemon TCG",
+    liveDemo: "https://pokemontcg2.onrender.com/",
+    github: "https://github.com/Ashraf7ussein/pokedex/",
+    description:
+      "A sleek web app that lets users browse, filter, and explore official Pokémon Trading Card Game cards using the Pokémon TCG API. Features advanced search, set filtering, card type categorization, and detailed card views.",
+    tags: ["HTML", "Tailwind CSS", "JavaScript", "React", "Radix Ui"],
+    features: [
+      "Browse a vast collection of Pokémon cards from various sets",
+      "Advanced search and dark mode",
+      "View detailed card info including HP, attacks, card rarity , prices and more",
+    ],
+    technologies: ["React", "Tailwind CSS", "JavaScript", "Radix Ui"],
+    images: [tcg1, tcg2],
+  },
   {
     id: "gameHub",
     title: "🎮 Game Discovery App",
@@ -50,7 +67,7 @@ export const projectsList = [
 
   {
     id: "qahwaBlk",
-    title: "☕ Qahwa Blk Coffee Website",
+    title: "☕ Qahwa Blk Website",
     liveDemo: "https://qahwablk.onrender.com/",
     github: "https://github.com/Ashraf7ussein/qahwablk",
     description:
@@ -118,23 +135,5 @@ export const projectsList = [
     ],
     technologies: ["React", "Tailwind CSS"],
     images: [grover],
-  },
-
-  {
-    id: "educationWebsite",
-    title: "🎓 University Website Clone",
-    liveDemo: "https://edusitywebsite.vercel.app/",
-    github: "https://github.com/Ashraf7ussein/edusitywebsite",
-    description:
-      "A clean and professional university landing page clone highlighting programs, admissions, and student testimonials.",
-    tags: ["HTML", "Tailwind CSS", "JavaScript", "React"],
-    features: [
-      "Beautiful hero section with call-to-action",
-      "Information-rich sections for programs and benefits",
-      "Testimonials from students",
-      "Fully responsive and mobile-friendly",
-    ],
-    technologies: ["React", "Tailwind CSS", "JavaScript"],
-    images: [edu],
   },
 ];

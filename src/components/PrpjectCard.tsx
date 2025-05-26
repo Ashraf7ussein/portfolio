@@ -33,7 +33,7 @@ const ProjectCard = ({
       <div className="p-6 flex-grow">
         <p className="text-gray-600 text-lg mb-2">{description}</p>
 
-        <p className="text-gray-600 text-lg mb-2">tags used in the project:</p>
+        <p className="text-gray-600 text-lg my-3">tags used in the project:</p>
         <div className="flex flex-wrap gap-2 mt-2">
           {tags.map((tech) => (
             <span
