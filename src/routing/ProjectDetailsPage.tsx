@@ -86,16 +86,22 @@ const ProjectDetailsPage = () => {
             )}
 
           {/* Link */}
-          {project.instructions.link && (
+          {project.instructions?.link && (
             <div className="text-center">
-              <a
-                href={project.instructions.link}
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => {
+                  const link = project.instructions?.link;
+                  if (link) {
+                    navigator.clipboard
+                      .writeText(link)
+                      .then(() => alert("Link copied to clipboard!"))
+                      .catch((err) => console.error("Failed to copy:", err));
+                  }
+                }}
                 className="text-blue-600 underline font-semibold"
               >
-                Open App via Expo Link
-              </a>
+                Copy Expo Link
+              </button>
             </div>
           )}
         </div>
