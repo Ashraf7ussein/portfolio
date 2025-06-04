@@ -12,6 +12,7 @@ export interface Project {
   images: string[];
   features: string[];
   technologies: string[];
+  typeOfProject?: string;
 }
 
 const ProjectCard = ({
@@ -21,12 +22,17 @@ const ProjectCard = ({
   tags,
   description,
   id,
+  typeOfProject,
 }: Project) => {
   return (
     <div className="rounded-2xl bg-white overflow-hidden border border-secondary flex flex-col h-full">
       {/* Header */}
-      <div className="bg-primary px-6 py-4">
-        <h3 className="font-bold text-2xl text-white text-center">{title}</h3>
+      <div
+        className={`${
+          typeOfProject === "reactNative" ? "bg-blue-500" : "bg-primary"
+        } px-6 py-4`}
+      >
+        <h3 className="font-bold text-2xl text-black text-center">{title}</h3>
       </div>
 
       {/* Body */}
@@ -60,15 +66,17 @@ const ProjectCard = ({
 
       {/* Footer */}
       <div className="flex justify-center items-center px-6 py-4 border-t gap-3 mt-auto">
-        <a
-          href={liveDemo}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center gap-2 px-5 pb-2 pt-3 border border-primary text-primary
+        {liveDemo !== "" && (
+          <a
+            href={liveDemo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-5 pb-2 pt-3 border border-primary text-primary
           rounded-full hover:bg-secondary hover:border-secondary hover:text-white transition-colors duration-300"
-        >
-          Live Demo
-        </a>
+          >
+            Live Demo
+          </a>
+        )}
         <a
           href={github}
           target="_blank"
