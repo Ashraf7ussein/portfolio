@@ -2,7 +2,14 @@ import { GrGithub } from "react-icons/gr";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
+interface Instructions {
+  image?: string;
+  link?: string;
+  instructions?: string[];
+}
+
 export interface Project {
+  instructions?: Instructions;
   title: string;
   github: string;
   liveDemo: string;

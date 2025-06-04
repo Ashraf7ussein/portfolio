@@ -9,7 +9,10 @@ const ProjectDetailsPage = () => {
 
   useEffect(() => {
     const found = projectsList.find((p) => p.id === id);
-    setProject(found ?? null);
+
+    if (found) {
+      setProject(found);
+    }
   }, [id]);
 
   if (!project) return <div className="text-center pt-40">Loading...</div>;
