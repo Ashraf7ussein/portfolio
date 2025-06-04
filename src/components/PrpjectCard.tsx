@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 interface Instructions {
   image?: string;
-  link?: string;
   instructions?: string[];
 }
 

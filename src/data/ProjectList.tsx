@@ -44,13 +44,12 @@ export const projectsList = [
     instructions: {
       instructions: [
         "Install Expo Go on your mobile device from the App Store or Google Play.",
-        "Open Expo Go and scan the QR code provided above or open the app link below.",
+        "Open Expo Go and scan the QR code provided above.",
         "Sign up or log in to the Rosca app using your credentials.",
         "Create a new ROSCA group or join an existing one using the invitation code.",
         "Manage your contributions, view payouts, and track group activity in real-time.",
       ],
       image: qr,
-      link: "exp+://expo-development-client/?url=https://u.expo.dev/a9ef1d88-d2a1-4dc9-91c7-15473dbf17fc/group/97b54c73-a105-46ee-9abb-282651036289",
     },
   },
   {

@@ -84,26 +84,6 @@ const ProjectDetailsPage = () => {
                 ))}
               </ol>
             )}
-
-          {/* Link */}
-          {project.instructions?.link && (
-            <div className="text-center">
-              <button
-                onClick={() => {
-                  const link = project.instructions?.link;
-                  if (link) {
-                    navigator.clipboard
-                      .writeText(link)
-                      .then(() => alert("Link copied to clipboard!"))
-                      .catch((err) => console.error("Failed to copy:", err));
-                  }
-                }}
-                className="text-blue-600 underline font-semibold"
-              >
-                Copy Expo Link
-              </button>
-            </div>
-          )}
         </div>
       )}
 
